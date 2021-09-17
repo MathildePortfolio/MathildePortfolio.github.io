@@ -33,7 +33,7 @@
          url("typo/Karrik-Italic.woff2") format("woff2");
  }
 
- h1 {
+ .titre {
 
      margin-bottom: 10px;
      margin-top: 30px;
@@ -43,6 +43,25 @@
      text-align: left;
 
  }
+
+ .titreinside {
+     
+    margin-bottom: 60px;
+    margin-top: 30px;
+    font-family: "Karrik";
+    font-size: clamp(26px, 4vw, 36px);
+    color: white;
+    text-align: left;
+ }
+
+.texteimage { 
+    color: rgb(54, 32, 83);
+    opacity: 70%;
+    font-family: 'Karrik';
+    display: block;
+    font-size: clamp(13px, 3vw, 16px);
+    text-align: center;
+}
 
  h2 {
      font-family: 'Karrik';
@@ -56,7 +75,7 @@
      color: rgb(54, 32, 83);
      font-family: 'Karrik';
      display: block;
-     font-size: 18px;
+     font-size: clamp(13px, 4vw, 18px);
      text-align: left;
      margin-bottom: 50px;
  }
@@ -69,10 +88,13 @@
      opacity: 100%;
  }
 
- /*smartphone*/
- .images {
+ .imagesinside {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
  }
 
+ /*smartphone*/
  @media (min-width:400px) {
      .images {
          display: grid;
@@ -81,7 +103,7 @@
      }
  }
 
- @media (min-width:630px) {
+ @media (min-width:700px) {
      .images {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
