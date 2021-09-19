@@ -35,8 +35,7 @@
 
  .titre {
 
-     margin-bottom: 10px;
-     margin-top: 30px;
+     padding: 20px;
      font-family: "Karrik";
      font-size: clamp(26px, 4vw, 36px);
      color: white;
@@ -46,8 +45,7 @@
 
  .titreinside {
 
-     margin-bottom: 60px;
-     margin-top: 30px;
+     padding: 20px;
      font-family: "Karrik";
      font-size: clamp(26px, 4vw, 36px);
      color: white;
@@ -64,9 +62,7 @@
  }
 
  .barrenav {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    padding-bottom: 20px;
+    display: inline;
 }
 
  h2 {
@@ -77,13 +73,7 @@
      margin-bottom: 30px;
  }
 
- .h2num1 {
-     text-align: right;
- }
 
- .h2num3 {
-     text-align: left;
- }
 
  p {
      color: rgb(54, 32, 83);
@@ -115,13 +105,24 @@
          grid-template-columns: 1fr 1fr;
          gap: 16px;
      }
- }
+     .barrenav {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }}
+    
 
  @media (min-width:700px) {
      .images {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
-         gap: 16px;
+         gap: 16px; }
 
-     }
+         .h2num1 {
+            text-align: right;
+        }
+       
+        .h2num3 {
+            text-align: left;
+        }
+    
  }
