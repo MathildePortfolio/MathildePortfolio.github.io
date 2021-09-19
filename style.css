@@ -17,7 +17,7 @@
 
      display: grid;
      gap: 1.5;
-     background:linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+     background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
      margin: 10px;
  }
 
@@ -45,30 +45,44 @@
  }
 
  .titreinside {
-     
-    margin-bottom: 60px;
-    margin-top: 30px;
-    font-family: "Karrik";
-    font-size: clamp(26px, 4vw, 36px);
-    color: white;
-    text-align: left;
+
+     margin-bottom: 60px;
+     margin-top: 30px;
+     font-family: "Karrik";
+     font-size: clamp(26px, 4vw, 36px);
+     color: white;
+     text-align: left;
  }
 
-.texteimage { 
-    color: rgb(54, 32, 83);
-    opacity: 70%;
-    font-family: 'Karrik';
-    display: block;
-    font-size: clamp(13px, 3vw, 16px);
-    text-align: center;
+ .texteimage {
+     color: rgb(54, 32, 83);
+     opacity: 70%;
+     font-family: 'Karrik';
+     display: block;
+     font-size: clamp(13px, 3vw, 16px);
+     text-align: center;
+ }
+
+ .barrenav {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding-bottom: 20px;
 }
 
  h2 {
      font-family: 'Karrik';
      color: white;
-     text-align: left;
-     font-size: clamp(18px, 4vw, 26px);
+     text-align: center ;
+     font-size: clamp(11px, 4vw, 26px);
      margin-bottom: 30px;
+ }
+
+ .h2num1 {
+     text-align: right;
+ }
+
+ .h2num3 {
+     text-align: left;
  }
 
  p {
@@ -89,12 +103,12 @@
  }
 
  .imagesinside {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 16px;
  }
 
- /*smartphone*/
+ /*changement de colones*/
  @media (min-width:400px) {
      .images {
          display: grid;
