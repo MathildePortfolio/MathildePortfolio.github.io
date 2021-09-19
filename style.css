@@ -15,10 +15,8 @@
 
  body {
 
-     display: grid;
-     gap: 1.5;
      background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-     margin: 10px;
+     margin: 50px;
  }
 
  @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
@@ -35,7 +33,7 @@
 
  .titre {
 
-     padding: 20px;
+     padding-bottom: 20px;
      font-family: "Karrik";
      font-size: clamp(26px, 4vw, 36px);
      color: white;
@@ -45,7 +43,7 @@
 
  .titreinside {
 
-     padding: 20px;
+     padding-bottom: 20px;
      font-family: "Karrik";
      font-size: clamp(26px, 4vw, 36px);
      color: white;
