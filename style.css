@@ -1,22 +1,21 @@
- .box {
-     width: 200px;
-     height: 50px;
+ .box1 {
+     width: 100%;
      margin-bottom: 30px;
-     margin-left: auto;
-     margin-right: auto;
-     display: ;
+     align-items: left;
+     border-radius: 20px;
  }
 
  #A {
-     background: rgb(255, 193, 193);
+     background: rgb(255, 255, 255);
  }
 
-
-
- body {
-
-     background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
-     margin: 50px;
+body {
+        background: linear-gradient(-45deg, #A770EF, #CF8BF3, #FDB99B, #ffc3a0);
+        background-size: 300% 300%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+        margin: 50px
+    }
  }
 
  @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
@@ -29,6 +28,11 @@
      font-family: "Karrik-italic";
      src: url("typo/Karrik-Italic.woff2") format("woff2"),
          url("typo/Karrik-Italic.woff2") format("woff2");
+ }
+
+ h1 a {
+     text-decoration: none;
+     color: currentColor;
  }
 
  .titre {
@@ -72,7 +76,6 @@
  }
 
 
-
  p {
      color: rgb(54, 32, 83);
      font-family: 'Karrik';
@@ -81,6 +84,28 @@
      text-align: left;
      margin-bottom: 50px;
  }
+
+ .titreintext {
+    color: rgb(3, 3, 3);
+    font-size: clamp(13px, 4vw, 18px);
+    padding: 30px;
+    margin-bottom: 0px;
+ }
+
+ .p1 {
+    color: rgb(3, 3, 3);
+    font-size: clamp(13px, 4vw, 18px);
+    padding: 30px;
+    margin-bottom: 0px;
+ }
+
+ .p2 {
+    color: rgb(71, 47, 61);
+    font-size: clamp(13px, 4vw, 18px);
+    padding: 30px;
+    margin-bottom: 0px;
+ }
+
 
  img {
      max-width: 100%;
@@ -109,7 +134,7 @@
     }}
     
 
- @media (min-width:700px) {
+ @media (min-width:750px) {
      .images {
          display: grid;
          grid-template-columns: 1fr 1fr 1fr;
@@ -124,3 +149,63 @@
         }
     
  }
+
+ /*image interractive*/
+  .box {
+    position: relative;
+    background: rgb(196, 133, 255);
+    width: 400px; height: 300px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    border-radius: 20px;
+  }
+  .box img {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  .box:before {
+    transition: all 0.35s ease;
+  }
+  .box:after {
+    transition: all 0.35s ease;
+  }
+ .box .info {
+    position: absolute; left: 0; bottom: 0;
+    color: #fff;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .box .info h3 {
+    font-size: 24px;
+    line-height: 40px;
+    text-overflow: ellipsis;
+    font-family: 'Karrik';
+    text-align: center;
+  }
+  .box .info p {
+    font-size: 16px;
+    font-family: 'Karrik';
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+  }
+  .box:hover .info {
+    opacity: 1;
+  }
+  .box:hover img {
+    opacity: 0.5;
+  }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/*fin image interractive*/
