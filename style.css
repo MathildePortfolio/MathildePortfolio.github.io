@@ -160,7 +160,7 @@ body {
     border-radius: 20px;
   }
   .box img {
-    width: 100%;
+    max-width: 100%;
     transition: all 0.3s ease-in-out;
   }
   .box:before {
@@ -175,6 +175,7 @@ body {
     width: 100%;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    height: auto;
   }
   .box .info h3 {
     font-size: 24px;

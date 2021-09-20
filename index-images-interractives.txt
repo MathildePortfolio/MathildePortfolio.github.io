@@ -1,0 +1,48 @@
+
+        <div class=images>
+            <div class="imginter">
+                <div class="box">
+                  <div class="img">
+                    <a href="Barlow.html"><img src="images/barlow-mockup.jpg" alt="Poster typo barlow"></a>
+                  </div>
+                  <div class="info">
+                    <h3>Specimen de la typo Barlow</h3>
+                    <p>Typo</p>
+                  </div>
+                </div>
+            </div>
+            <div class="imginter">
+                <div class="box">
+                  <div class="img">
+                    <a href="Dolan.html"><img src="images/dolan-mockup-affiches.jpg" alt="Edition Dolan"></a>
+                  </div>
+                  <div class="info">
+                    <h3>Edition sur l'artiste Xavier Dolan</h3>
+                    <p>Design Graphique</p>
+                  </div>
+                </div>
+            </div>
+            <div class="imginter">
+                <div class="box">
+                  <div class="img">
+                    <a href="installation.html"><img src="images/insta-prez-8-3-mockup-black.jpg" alt="Affiche suspect"></a>
+                  </div>
+                  <div class="info">
+                    <h3>Installation Lavomatic</h3>
+                    <p>Design Graphique</p>
+                  </div>
+                </div>
+            </div>
+            <div class="imginter">
+                <div class="box">
+                  <div class="img">
+                    <a href="volcans.html"><img src="images/volcan-pages-66-67-mockup.jpg" alt="Affiche suspect"></a>
+                  </div>
+                  <div class="info">
+                    <h3>Edition penser/classer</h3>
+                    <p>Design Graphique</p>
+                  </div>
+                </div>
+            </div>
+        </div>
+        
