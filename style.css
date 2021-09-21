@@ -40,6 +40,7 @@ body {
      padding-bottom: 20px;
      font-family: "Karrik";
      font-size: clamp(26px, 4vw, 36px);
+     text-shadow: 2px 2px 2px rgb(54, 32, 83);
      color: white;
      text-align: left;
 
@@ -121,6 +122,10 @@ body {
      gap: 16px;
  }
 
+ .img2col1 {
+   grid-column: ;
+ }
+
  /*changement de colones*/
  @media (min-width:400px) {
      .images {
@@ -133,7 +138,7 @@ body {
         grid-template-columns: 2fr 1fr 1fr 1fr;
     }}
     
-
+    
  @media (min-width:750px) {
      .images {
          display: grid;
