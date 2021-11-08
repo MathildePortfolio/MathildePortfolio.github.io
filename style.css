@@ -40,11 +40,16 @@
  @font-face {
    font-family: "Karrik";
    src: url("typo/Karrik-Regular.woff2") format("woff2"),
-     url("typo/Karrik-Regular.woff2") format("woff2");
+     url("typo/Karrik-Regular.woff2") format("woff2"); 
+}
+
+@font-face {
    font-family: "Maragsa";
    src: url("typo/Maragsa-Display.woff2") format("woff2"),
-     url("typo/Maragsa-Display.woff2") format("woff2");
+     url("typo/Maragsa-Display.woff2") format("woff2"); 
+}
 
+ @font-face {
    font-family: "Ouroboros";
    src: url("typo/Ouroboros-Regular.woff2") format("woff2"),
      url("typo/Ouroboros-Regular.woff2") format("woff2");
