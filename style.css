@@ -90,6 +90,7 @@
  .titreinside {
 
    padding-bottom: 20px;
+   padding-left: 20px;
    text-shadow: 2px 2px 2px rgb(141, 50, 168);
    font-family: "Karrik";
    font-size: clamp(26px, 4vw, 36px);
@@ -98,8 +99,9 @@
  }
 
  .texteprojets {
+   padding-left: 20px;
    color: rgb(3, 3, 3);
-   text-align: left;
+   text-align: justify;
    padding-right: 30px;
  }
 
@@ -200,6 +202,7 @@
  }
 
  .imagesinside {
+   padding-right: 20px;
    display: grid;
    grid-template-columns: 1fr 1fr;
    gap: 16px;
