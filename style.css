@@ -1,39 +1,59 @@
 /* new style */
 
-.box1 {
-   width: 100%;
-   margin-bottom: 30px;
-   align-items: left;
-   border-radius: 20px;
-   grid-column: 2/3;
- }
-
- #A {
-   background: rgb(255, 255, 255);
- }
-
- body {
-   background: linear-gradient(-45deg, #A770EF, #CF8BF3, #FDB99B, #ffc3a0);
-   background-size: 400% 400%;
-   animation: gradient 15s ease infinite;
-   height: 100%;
-   margin: 10px
- }
-
- @keyframes gradient {
-   0% {
-     background-position: 0% 50%;
-   }
-
-   50% {
-     background-position: 100% 50%;
-   }
-
-   100% {
-     background-position: 0% 50%;
-   }
- }
-
+/* roboto-300 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('typo/roboto-v29-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('typo/roboto-v29-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-300-italic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  src: local(''),
+       url('typo/roboto-v29-latin-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('typo/roboto-v29-latin-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('typo/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('typo/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-italic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  src: local(''),
+       url('typo/roboto-v29-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('typo/roboto-v29-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+       url('typo/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('typo/roboto-v29-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700italic */
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('typo/roboto-v29-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('typo/roboto-v29-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}  
  @import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');
 
@@ -56,6 +76,39 @@
  }
 
 
+.box1 {
+   width: 100%;
+   margin-bottom: 30px;
+   align-items: left;
+   border-radius: 20px;
+   grid-column: 2/3;
+ }
+
+ #A {
+   background: rgb(255, 255, 255);
+ }
+
+ body {
+   background: linear-gradient(-45deg, #b687f3, rgb(248, 195, 230),rgb(255, 237, 210));
+   background-size: 200% 200%;
+   animation: gradient 15s ease infinite;
+   height: 100%;
+   margin: 10px
+ }
+
+ @keyframes gradient {
+   0% {
+     background-position: 0% 50%;
+   }
+
+   50% {
+     background-position: 100% 50%;
+   }
+
+   100% {
+     background-position: 0% 50%;
+   }
+ }
 
  h1 a {
    text-decoration: none;
@@ -114,43 +167,35 @@
    text-align: center;
  }
 
- .barrenav {
-   padding: 20px;
- }
 
- @media (min-width:550px) {
-   .barrenav {
-     padding: 20px;
-     display: grid;
-     grid-template-columns: 6fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
-     text-align: end;
-   }
- }
 
- .glyphes {
-   font-family: "Ouroboros";
-   display: none;
- }
-
- @media (min-width:550px){
-   .glyphes{
-     display: block;
-   }
- }
 
  h2 a {
    text-decoration: none;
    color: currentColor;
  }
 
- h2 {
-   font-family: 'Karrik';
-   color: rgb(255, 255, 255);
+ .h2bn {
+   font-family: "Roboto";
+   font-style: normal;
+  font-weight: 700;
+   color: rgb(0, 0, 0);
    text-align: center;
-   font-size: clamp(11px, 4vw, 26px);
-   margin-bottom: 30px;
-   text-shadow: 2px 2px 2px rgb(109, 52, 143);
+   font-size: clamp(10px, 1.5vw, 26px);
  }
+ .h2bn1 {
+  font-family: "Roboto";
+  font-style: normal;
+ font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  border-radius: 50px;
+  text-align: center;
+  font-size: clamp(10px, 1.5vw, 26px);
+  margin-bottom: 40px;
+  margin-left: 7px;
+  margin-right: 7px;
+}
 
 
  p {
@@ -188,18 +233,10 @@
    max-width: 100%;
    margin: 0px auto;
    height: auto;
-   border-radius: 10px;
    opacity: 100%;
-   box-shadow:
-     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-     0 12.5px 10px rgba(0, 0, 0, 0.06),
-     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-     0 100px 80px rgba(0, 0, 0, 0.12);
-
-
+   border-radius: 5px;
  }
+
 
  .imagesinside {
    padding-right: 20px;
@@ -215,6 +252,18 @@
    display: block;
  }
 
+ .logo{
+  max-width: 50%;
+}
+
+.barrenav {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 
  /*changement de colones*/
   @media (min-width:400px) {
@@ -222,8 +271,25 @@
      display: grid;
      grid-template-columns: 1fr 1fr;
      gap: 16px;
+     padding-left: 20px;
+  padding-right: 20px;
    }
-
+   .barrenav {
+    padding-left: 20px;
+  padding-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .logo{
+    max-width: 100%;
+  }
+  .h2bn{
+    margin-top: 25px;
+  }
+  .h2bn1{
+    margin-top: 25px;
+  }
  } 
 
 
@@ -232,7 +298,47 @@
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      gap: 16px;
+     padding-left: 50px;
+     padding-right: 50px;
    }
+   .barrenav {
+    padding-left: 20px;
+     padding-right: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+  }
+  .logo{
+    max-width: 100%;
+  }
+  .h2bn{
+    margin-top: 50px;
+  }
+  .h2bn1{
+    margin-top: 50px;
+    margin-left: 15px;
+  margin-right: 15px;
+  }
+
+  @media (min-width:1100px) {
+    .logo{
+      max-width: 200%;
+    }
+    .h2bn{
+      margin-top: 100px;
+    }
+    .h2bn1{
+      margin-top: 100px;
+      margin-bottom: 60px ;
+    }
+
+    @media (min-width:1800px) {
+      .h2bn1{
+        
+         margin-left: 50px ;
+         margin-right: 50px ;
+      }
+    }
 
 
  } 
