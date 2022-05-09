@@ -81,7 +81,12 @@
    margin-bottom: 30px;
    align-items: left;
    border-radius: 20px;
-   grid-column: 2/3;
+   (grid-column: 2/3;)
+ }
+
+ .aproposgrid {
+   display: grid;
+   grid-template-columns: 1fr, 1fr, 1fr;
  }
 
  #A {
@@ -89,7 +94,9 @@
  }
 
  body {
-   background: linear-gradient(-45deg, #b687f3, rgb(248, 195, 230),rgb(255, 237, 210));
+  background: linear-gradient(-45deg, rgba(31, 31, 31, 1),rgba(31, 31, 31, 1));
+  /*background: linear-gradient(-45deg, rgba(254, 189, 117, 1),rgba(255, 105, 182, 1),rgba(37, 38, 255, 1));
+   background: linear-gradient(-45deg, #b687f3, rgb(248, 195, 230),rgb(255, 237, 210));*/
    background-size: 200% 200%;
    animation: gradient 15s ease infinite;
    height: 100%;
@@ -210,21 +217,24 @@
  .titreintext {
    color: rgb(3, 3, 3);
    font-size: clamp(13px, 4vw, 18px);
-   padding: 30px;
+   padding-left: 10px;
+   padding-bottom: 10px;
    margin-bottom: 0px;
  }
 
  .p1 {
    color: rgb(3, 3, 3);
    font-size: clamp(13px, 4vw, 18px);
-   padding: 30px;
+   padding-left: 20px;
+   padding-bottom: 10px;
    margin-bottom: 0px;
  }
 
  .p2 {
    color: rgb(71, 47, 61);
    font-size: clamp(13px, 4vw, 18px);
-   padding: 30px;
+   padding-left: 20px;
+   padding-bottom: 10px;
    margin-bottom: 0px;
  }
 
@@ -245,6 +255,10 @@
    gap: 16px;
  }
 
+ .pp {
+   border-radius: 100%;
+   max-width: 50%;
+ }
 
 
 
